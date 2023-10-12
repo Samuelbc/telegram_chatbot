@@ -4,9 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-python-telegram-bot = "*"
 flask = "*"
 mysql-connector-python = "*"
+python-dotenv = "*"
+python-telegram-bot = "*"
+openai = "*"
+speechrecognition = "*"
 
 [dev-packages]
 

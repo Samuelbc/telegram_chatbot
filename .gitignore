@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg
+*.egg-info
+dist/
+build/
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+develop-eggs/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Pipenv files, which might contain sensitive data
+Pipfile.lock
+
+# dotenv environment variables file
+.env
+
+# pyenv
+.python-version
+
+# IDEs and editors
+.idea/
+*.swp
+*.swo
+*.swn
+*.log
+
+# OS files
+.DS_Store
+.Thumbs.db
