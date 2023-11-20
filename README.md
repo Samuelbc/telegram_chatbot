@@ -35,7 +35,33 @@ telegram_chatbot/
 * bash
 * Copy code
 * pipenv install
-* Set up your MySQL server and create a database.
+* Set up your MySQL server and create a database with the tables bellow.
+```
+CREATE TABLE Users (
+    user_id INT PRIMARY KEY,
+    username VARCHAR(255),
+    first_name VARCHAR(255),
+    last_name VARCHAR(255)
+);
+
+CREATE TABLE Messages (
+    message_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id INT,
+    content TEXT,
+    timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES Users(user_id)
+);
+
+
+CREATE TABLE Responses (
+    response_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_id BIGINT,
+    message_content TEXT,
+    response_content TEXT,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (user_id) REFERENCES Users(user_id)
+);
+```
 ### Update the .env file with the required database configurations:
 ```
 DB_HOST=<your_database_host>
