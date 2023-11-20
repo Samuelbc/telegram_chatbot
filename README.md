@@ -52,7 +52,6 @@ CREATE TABLE Messages (
     FOREIGN KEY (user_id) REFERENCES Users(user_id)
 );
 
-
 CREATE TABLE Responses (
     response_id INT AUTO_INCREMENT PRIMARY KEY,
     user_id BIGINT,
