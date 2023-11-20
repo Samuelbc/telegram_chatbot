@@ -46,7 +46,7 @@ CREATE TABLE Users (
 
 CREATE TABLE Messages (
     message_id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT,
+    user_id BIGINT,
     content TEXT,
     timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (user_id) REFERENCES Users(user_id)
