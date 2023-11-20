@@ -38,7 +38,7 @@ telegram_chatbot/
 * Set up your MySQL server and create a database with the tables bellow.
 ```
 CREATE TABLE Users (
-    user_id INT PRIMARY KEY,
+    user_id BIGINT PRIMARY KEY,
     username VARCHAR(255),
     first_name VARCHAR(255),
     last_name VARCHAR(255)
